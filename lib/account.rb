@@ -11,4 +11,8 @@ class Account
     self.balance += amount
   end
 
+  def debit(amount)
+    self.balance -= amount
+  end 
+
 end

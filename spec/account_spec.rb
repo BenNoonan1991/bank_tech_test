@@ -15,4 +15,12 @@ describe Account do
       expect(account.balance).to eq 100
     end
   end
+
+  describe "#debit" do
+    it "withdraws money fom the account" do
+      account.credit(100)
+      account.debit(50)
+      expect(account.balance).to eq 50
+    end
+  end
 end
