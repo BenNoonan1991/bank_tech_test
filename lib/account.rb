@@ -1,10 +1,7 @@
 class Account
 
-  attr_reader :balance
-  attr_writer :balance
-  attr_reader :date
-  attr_reader :credit
-  attr_reader :debit
+   attr_reader :balance
+   attr_writer :balance
 
   def initialize
     @balance = 0
